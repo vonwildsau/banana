@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BANANA | MAP</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+    
+    <!-- Load our styles -->
+    <link href="./styleMap.css" rel="stylesheet">
+    
+    <script>
+      if (location.protocol != 'https:') {
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+  </head>
+  
+  <body>
+    
+    <div class="header">
+      
+      
+      <div class="headerButtons">
+        <span class="banana">
+          <button><a href="index.html">Home</a></button>
+        </span>
+        <span class="banana">
+          <button><a href="form.html">Add your Bananas</a></button>
+        </span>
+      </div>
+      
+    </div>
+    
+    <div class="mainMap">
+      <div id="map"></div>
+    </div>
+    
+    <div class="footer">
+      <div class="vonwildsau">
+        <div class="footerText">
+            <a href="https://vonwildsau.glitch.me" target="_blank">a vonwildsau creation</a>
+        </div> 
+      </div>
+    </div>
+    
+    <script class="popup-template" type="x-tmpl-mustache">
+      <div>
+        <h2><center>Banana #{{cartodb_id}}</center></h2>
+        <div><b>Name:</b> {{display_name}}</div>
+        <div><b>Quantity:</b> {{quantity}}</div>
+        <div><b>Organic?</b> {{organic}}</div>
+        <div><b>Did you like the banana?</b> {{like_banana}}</div>
+        <div><b>Description:</b> {{describe}}</div>
+      </div>
+    </script>
+  
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+    
+    <!-- import the Mustache library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js"></script>
+
+    
+    <!-- Load our JavaScript -->
+    <script src="./script.js"></script> 
+  </body>
+</html>

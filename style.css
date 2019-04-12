@@ -1,0 +1,398 @@
+/* CSS files add styling rules to your content */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-color: tan;
+}
+
+button {
+  position: relative;
+  z-index: 3000000;
+  border-radius: 8px;
+  background-color: rgba(255, 237, 119,0.5);
+    -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
+    border-color: rgba(59,59,59,0.8);
+    color: black;
+    border-top-width:1px;
+    border-width:1px;
+    cursor:pointer;
+    display:block;
+    font-size:22px;
+    font-weight:500;
+    height:30px;
+    text-align:center;
+    text-indent:1px;
+}
+
+      button:hover {
+          background-color: tan;
+            }
+
+
+.banana button {
+    display: inline-block;
+    height: 8vh;
+    width: 400px;
+    font-size: 4vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 0vw;
+    margin-right: 2vw;
+  }
+
+    
+h1 {
+  font-style: italic;
+  color: black;
+  font-size: 64px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+h5 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+    .vonwildsau a:hover {
+      border-radius: 5px;
+      -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
+      border-color: rgba(59,59,59,0.8);
+      border-style:solid;
+      border-top-width:1px;
+      border-width:1px;
+      color:black;
+      cursor:pointer;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+label { 
+  font-size: 28px;
+  margin-left: 5%;
+}
+
+textarea {
+  width: 90%;
+  height: 60px;
+  margin-left: 5%;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+select {
+  height: 2.5em;
+  margin-right: 0.5em;
+  margin-left: 1em;
+  font-weight: bold;
+}
+
+input {
+  width: 90%;
+  height: 40px;
+  font-size: 18px;
+  cursor: text;
+  margin-left: 5%;
+}
+
+/************************************* DIV CLASSES ARE BELOW *************************************/
+
+.header {
+  /background-color: lightgreen;
+  height: 20vh;
+  position: relative;
+  margin: 0;
+  width: 100vw;
+}
+    
+    .headerImg {
+      float: left;
+      /background-color: pink;  
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 2vw;
+      height: 16vh;
+      width: 16vh;
+    }
+
+     .headerButtons {
+      float: right;
+      /background-color: red;  
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 1vw;
+      margin-right: 1vw;
+      height: 16vh;
+      width: auto;
+    }
+
+.main {
+  /background-color: lightblue;
+  height: 75vh;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+}
+
+.mainForm {
+  height: auto;
+  /background-color: blue;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+}
+
+    .title {
+      /background-color: #99bde8;
+      width: 100vw;
+      margin-left: 0vw;
+      padding-top: 100px;
+    }
+
+    .titleForm {
+      /background-color: #99bde8;
+      width: 100vw;
+      margin-left: 0vw;
+      padding-top: 20px;
+    }
+
+    .mainText {
+      background-color: rgba(255, 237, 119,0.5);
+      width: 74vw;
+      padding: 2vw;
+      margin-left: 10vw;
+      margin-top: 60px;
+      overflow-y: auto;
+      text-indent: 20px;
+      text-align: justify;
+      line-height: 40px;
+      letter-spacing: 0px;
+      word-spacing: -1px;
+        border-radius: 20px;
+        border-color: rgba(0,0,0,1);
+        border-style:solid;
+        border-top-width:1px;
+        border-width:2px;
+}
+      
+    .formText {
+      background-color: rgba(255, 237, 119,0.5);
+      width: 76vw;
+      padding: 2vw;
+      margin-left: 10vw;
+      margin-top: 60px;
+      overflow-y: auto;
+      line-height: 36px;
+        border-radius: 20px;
+        border-color: rgba(0,0,0,1);
+        border-style:solid;
+        border-top-width:1px;
+        border-width:2px;
+}
+
+.formLeft {
+  background-color: tan;
+  border-radius: 20px;
+  border-color: rgba(0,0,0,1);
+  border-style:solid;
+  border-top-width:1px;
+  border-width:2px;
+  width: 48%;
+  float: left;
+}
+
+.formRight {
+  background-color: tan;
+  border-radius: 20px;
+  border-color: rgba(0,0,0,1);
+  border-style:solid;
+  border-top-width:1px;
+  border-width:2px;
+  width: 48%;
+  float:right;
+}
+
+.footer {
+  height: 5vh;
+  position: relative;
+  width: 100vw;
+  /background-color: lightyellow;
+  margin: 0px;
+}
+
+    .footerText {
+      width: 50vw;
+      /background-color: yellow;
+      margin-left: 25vw;
+      text-align: center;
+      padding-top: 10px;
+    }  
+
+.formFooter {
+  height: 5vh;
+  position: relative;
+  width: 100vw;
+  /background-color: lightyellow;
+  margin: 0px;
+}
+
+
+.leaflet-touch .leaflet-bar a {
+  background-color: rgba(0,0,0,0);
+  cursor:pointer;
+}
+
+
+/************************* ID's are BELOW ************************************/
+
+#formMap {
+  width: 99%;
+  margin: 3px;
+  height: 600px;
+  /* background-color: green; */
+  cursor: crosshair;
+  border-radius: 15px;
+}
+
+
+/************************ IF THE SCREEN IS TOO SMALL **************************************/
+
+@media screen and (max-width: 992px) {
+    
+  .banana button {
+    height: 6vh;
+    display: block;
+    width: 60vw;
+    font-size: 3vh;
+    margin-top: 1.5vh;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    border-width: 2px;
+  }
+  
+  .headerButtons {
+      /background-color: green;  
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 0vw;
+      margin-right: 5vw;
+      height: 16vh;
+    }
+  
+   .headerImg {
+      margin-top: 2.5vh;
+      margin-left: 2vw;
+      height: 16vh;
+      width: 15vh;
+    }
+  
+  .title {
+      /background-color: violet;
+      width: 90vw;
+      margin-left: 5vw;
+      padding-top: 60px;
+    }
+
+    .mainText {
+      /background-color: yellow;
+      width: 90vw;
+      margin-left: 2.5vw;
+      padding-top: 20px;
+      text-align: justify;
+      line-height: 60px;
+      letter-spacing: 0px;
+      word-spacing: 0px;
+    }
+  
+  h1 {
+    font-style: italic;
+    color: black;
+    font-size: 120px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 64px;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 42px;
+    margin: 0;
+  }
+  
+  h5 {
+    font-size: 28px;
+  }
+  
+  label {
+    font-size: 32px;
+  }
+  
+  input {
+    font-size: 32px;
+    font-family: sans-serif;
+  }
+  
+  textarea {
+    height: 100px;
+    font-family: sans-serif;
+  }
+  
+  .formLeft {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .formRight {
+    width: 100%;
+    background-color: inherit;
+  }
+  
+  .formText {
+    height: auto;
+    position: relative;
+    margin: 0;
+    width: 90vw;
+    margin-left: 2.5vw;
+    padding-top: 20px;
+    text-align: left;
+    line-height: 60px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+  }
+  
+}
+
