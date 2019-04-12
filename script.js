@@ -4,7 +4,8 @@
 
 var map = L.map('map', {
   center: [15, 10],
-  zoom: 2
+  zoom: 2,
+  maxZoom: 12
 });
 
 // Popup template
@@ -34,6 +35,11 @@ var lineStyle = new carto.style.CartoCSS(`
     line-color: #ffcc00;
     line-opacity: 1;
   }
+  #layer::outline {
+    line-width: 20;
+    line-color: green;
+    line-opacity: 0;
+}
 
 `);
 
