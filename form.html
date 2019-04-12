@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BANANA | FORM</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+    <!-- Load our JavaScript -->
+    <script src="./formMap.js" defer></script> 
+    <link rel="shortcut icon" href="'">
+    <script>
+      if (location.protocol != 'https:') {
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+      }
+      
+    </script>
+    
+  </head>
+  
+  <body>
+  
+    
+    <div class="header">
+      <div class="headerImg">
+        <a href="./index.html">
+          <img style="width: 100%; height: auto;" src="https://cdn.glitch.com/b460fc08-22ae-4c7a-a852-2f4eb3308628%2Fbanana_icon.png?1554337295051">
+        </a>
+      </div>
+      
+      
+      <div class="headerButtons">
+        <span class="banana">
+          <button><a href="./map.html">Banana Map</a></button>
+        </span>
+        <span class="banana">
+          <button><a href="./index.html">Home</a></button>
+        </span>
+      </div>
+      
+    </div>
+    
+    <div class="mainForm">
+      <div class="titleForm">
+        <h1>Where's your Banana from?</h1>
+      </div>
+      
+      <div class="formText">
+          <script type="text/javascript">var submitted=false;</script>
+
+              <script>console.log(submitted);</script>
+              <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdUTDKcCv1FOwCsjdaQks4atj_Lyv6_V0hDdh9dvVCY7Caw4w/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
+                  <input class="longitude_1" id="longitude_1" type="hidden" name="entry.207119135" />
+                  <input class="latitude_1" id="latitude_1" type="hidden" name="entry.1747770870" />
+
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='thanks.html';}"></iframe>
+
+              <input class="longitude" id="longitude" type="hidden" name="entry.85494021" />
+              <input class="latitude" id="latitude" type="hidden" name="entry.1209276442" />
+
+
+        <div class="formRight">
+          <div id="formMap"></div>  
+        </div>
+                
+        <div class="formLeft">        
+                       
+          <div style="padding-top: 20px; text-indent: 0px; padding-left: 0.5em; padding-right: 0.5em;">
+            <label><u>Click on the map to place your Banana</u>*</label></div>
+            <div>
+              <br>
+              <p>
+              <label for="like-banana">Did you like the Banana?</label>
+              <select name="entry.593411931" style="margin-left: 1em;">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+              </p>
+            </div>
+
+            <div>
+              <p>
+              <label for="display-name">Display Name* :</label>
+              <input id="display-name" style="position: static; margin-left: 1em; padding-right: 0.5em ;height: 1.5em;" type="text" name="entry.249698041"/>
+              </p>
+            </div>
+            
+
+            <div>
+              <p>
+              <label for="quantity">Quantity:</label>
+              <select style="margin-left: 1em;" name="entry.741980837">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10+</option>
+              </select>
+              </p>
+            </div>
+
+            <div>
+              <p>
+              <label for="Organic">Organic:</label>
+              <select style="margin-left: 1em;" name="entry.738079689">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+              </p>
+            </div>
+
+            <div>
+              <p>
+              <label for="describe">Briefly describe your Banana:</label>
+              <textarea style="margin-top: 0.5em;" id="describe" name="entry.2024357732"></textarea>
+              </p>
+            </div>
+            <div style="line-height: 0;">
+              <p style="line-height: 0;"><h5>* Required Fields</h5></p>
+            </div>
+            <p>
+              <input class="submit-button" style="border-radius: 10px; cursor: pointer;" type="submit" value="Submit" disabled="true"/>
+            </p>
+              
+            
+            </div>
+          </form>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="vonwildsau">
+        <div class="footerText">
+            <a href="https://vonwildsau.glitch.me" target="_blank">a vonwildsau creation</a>
+        </div> 
+      </div>
+    </div>
+    
+  </body>
+</html>
