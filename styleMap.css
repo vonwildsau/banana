@@ -1,0 +1,262 @@
+/* CSS files add styling rules to your content */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+button {
+  position: relative;
+  z-index: 3000000;
+  border-radius: 8px;
+  background-color: rgba(255, 237, 119,0.8);
+    -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
+    border-color: rgba(59,59,59,0.8);
+    color: black;
+    border-top-width:1px;
+    border-width:1px;
+    cursor:pointer;
+    display:block;
+    font-size:22px;
+    font-weight:500;
+    height:30px;
+    text-align:center;
+    text-indent:1px;
+}
+
+      button:hover {
+          background-color: rgba(255, 237, 119,0);
+            }
+
+
+.banana button {
+    display: inline-block;
+    height: 8vh;
+    width: 400px;
+    font-size: 4vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 0vw;
+    margin-right: 2vw;
+  }
+
+    
+h1 {
+  font-style: italic;
+  color: black;
+  font-size: 64px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.vonwildsau a {
+  background-color: rgba(255, 237, 119,0.5);
+  border-radius: 5px;
+  -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
+  border-color: rgba(59,59,59,0.8);
+  border-style:solid;
+  border-top-width:1px;
+  border-width:1px;
+  color:black;
+  cursor:pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+    .vonwildsau a:hover {
+      background-color: rgba(0,0,0,0);
+    }
+
+/************************************* DIV CLASSES ARE BELOW *************************************/
+
+.header {
+  /background-color: lightgreen;
+  height: 20vh;
+  position: absolute;
+  margin: 0;
+  width: 100vw;  
+}
+    
+    .headerImg {
+      float: left;
+      /background-color: pink;  
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 2vw;
+      height: 16vh;
+      width: 16vh;
+    }
+
+     .headerButtons {
+      float: right;
+      /background-color: red;  
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 1vw;
+      margin-right: 1vw;
+      height: 16vh;
+      width: auto;
+    }
+
+.mainMap {
+  /background-color: lightblue;
+  height: 95vh;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+}
+
+.footer {
+  height: 5vh;
+  position: relative;
+  width: 100vw;
+  /background-color: lightyellow;
+  margin: 0;
+}
+
+    .footerText {
+      width: 50vw;
+      /background-color: yellow;
+      margin-left: 25vw;
+      text-align: center;
+      padding-top: 10px;
+    }  
+
+.leaflet-touch .leaflet-bar a:last-child {
+  border-radius: 5px;
+}
+.leaflet-touch .leaflet-bar a:first-child {
+  border-radius: 5px;
+}
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  border: 0;
+}
+
+.leaflet-touch .leaflet-bar a {
+  background-color: rgba(255, 237, 119,0.8);
+  border-radius: 5px;
+  -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
+  border-color: rgba(0,0,0,1);
+  border-style:solid;
+  border-top-width:1px;
+  border-width:1px;
+  margin: 10px;
+  padding: 4px;
+  color:black;
+  cursor:pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.leaflet-touch:hover {
+  background-color: rgba(0,0,0,0);
+}
+  
+/************************* ID's are BELOW ************************************/
+
+
+#map {
+  left: 0%;
+  float: left;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/************************ IF THE SCREEN IS TOO SMALL **************************************/
+
+@media screen and (max-width: 992px) {
+    
+  .banana button {
+    height: 6vh;
+    display: block;
+    width: 60vw;
+    font-size: 3vh;
+    margin-top: 1.5vh;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    border-width: 2px;
+  }
+  
+  .headerButtons {
+      /background-color: green;  
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 0vw;
+      margin-right: 5vw;
+      height: 16vh;
+    }
+  
+   .headerImg {
+      margin-top: 2.5vh;
+      margin-left: 2vw;
+      height: 16vh;
+      width: 15vh;
+    }
+  
+  .title {
+      /background-color: violet;
+      width: 90vw;
+      margin-left: 5vw;
+      padding-top: 60px;
+    }
+
+    .mainText {
+      /background-color: yellow;
+      width: 80vw;
+      margin-left: 5vw;
+      padding-top: 60px;
+      text-indent: 80px;
+      text-align: justify;
+      line-height: 60px;
+      letter-spacing: 0px;
+      word-spacing: 0px;
+    }
+  
+  h1 {
+    font-style: italic;
+    color: black;
+    font-size: 120px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 42px;
+    margin: 0;
+  }
+  
+}
+
